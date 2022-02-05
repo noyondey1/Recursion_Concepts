@@ -16,5 +16,22 @@ const numberAddition = n => {
     } else {
         return numberAddition(n - 1) + n;
     }
+};
+
+// console.log(numberAddition(10));
+
+// newCountDown(); */
+const days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+let count = 0;
+
+function recursionNew() {
+    if (count < days.length) {
+        console.log(days[count]);
+        count += 1;
+        setTimeout(recursionNew, 1000)
+    } else {
+        return 0;
+    }
 }
-console.log(numberAddition(10));
+
+recursionNew();
