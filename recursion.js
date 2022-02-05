@@ -1,4 +1,4 @@
-// console.log('Hello Recursion');
+//recursion number loop
 const numberRecursion = n => {
     if (n === 0) {
         return 0;
@@ -7,4 +7,14 @@ const numberRecursion = n => {
     console.log(n)
 };
 
-numberRecursion(10);
+// numberRecursion(10);
+
+//recursion number addition
+const numberAddition = n => {
+    if (n === 0) {
+        return 0;
+    } else {
+        return numberAddition(n - 1) + n;
+    }
+}
+console.log(numberAddition(10));
